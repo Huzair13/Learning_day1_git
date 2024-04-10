@@ -49,3 +49,13 @@ same file
 	stage 
 	commit 
 	push
+
+
+
+del a branch
+>> git branch -d user2(branchName) ------> it gives warning like its not fully merged 
+>> git branch -D branch1 -------> delete directly without any warning (if we are sure that everything is okay then we can go ahead with capital D)
+
+the above is deleted on locally
+
+>>git push origin -d huzair(g3) --- to del in remote ( github)

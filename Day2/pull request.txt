@@ -1,0 +1,96 @@
+we will not push any critical info to the respository
+like keys, password etc.,
+
+even though its private repository we not gonno push any critical info to the repository
+
+go to a location in a system where you are not collabrated with the repository already
+
+1) create a new folder and initialize the git and then pull from git
+2) we can clone from git
+command >> git clone "https://link.com"
+
+to see previous log messages command >> git log
+
+
+
+when i added to a already existing github repository
+we want pull the code by the above 2 techniques
+and then we want to create a branch
+>> git branch
+>> git checkout huzair
+>> mkdir employeemodule (will create a folder)
+we cant push a folder alone to the git
+
+try to push
+>> git add -A
+>> git commit -m "employee module empty folder"
+
+output : nothing to commit
+
+now try to create a file in the folder employee module 
+now try to push it to the git
+
+
+>> git checkout huzair
+>> git checkout master
+>> git merge huzair
+>> git push origin master (if rejected then do a pull and then push)
+>> git pull origin master
+>> git push origin master
+
+(some window apppeared write :wq to exit)
+
+
+insead of merging with the master 
+we can create a pull request (in github website)
+try to pull the data from github from that paticular branch
+base branch to be master branch and then merge from huzair branch (g3 branch)
+
+write a discription --- 
+# employee module updated
+employee module FRS added
+
+click -> create a pull request or create a draft request button
+
+good practise is to have a merge commit to have a separate commit
+
+click button >> create a merge and commit
+
+add -->> employee merger (FRS added)
+then click confirm pull request
+
+
+
+in local
+
+still in my local when i swiyched it to master
+actually we do not have the employe module
+local master is updated
+but my remote master is updated
+
+so
+>> git checkout master
+>> git pull
+
+
+
+now we can raise a conflict
+
+i am in the master right now
+
+consider 2 of them doing the work
+2nd person make a change in a change and then push it to the master branch
+1st person is also making a change in the same file in the local file 
+then 
+>> git add -A
+>> git commit -m "use case 1 - Add employee"
+>> git push origin huzair (g3) ---> pushed to the branch 
+
+now person 1
+
+pull request
+it gives and immediately understand and a conflict is raised
+"X cant automatically merge"
+
+then resolve the conflict but putting one code up and down and mark conflict is resolved
+
